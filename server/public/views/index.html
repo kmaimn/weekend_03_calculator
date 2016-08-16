@@ -5,10 +5,28 @@
     <title>Weekend 3 Calculator</title>
     <link rel="stylesheet" href="/styles/style.css" />
 
-    <script src="/vendors/jquery.min.js" type="text/javascript"></script>
+    <script src="/vendor/jquery.min.js" type="text/javascript"></script>
     <script src="/scripts/clientapp.js" type="text/javascript"></script>
   </head>
   <body>
-      <h1>Calculator</h1>
+    <h1>Calculator</h1>
+    <form id="calculator">
+
+        <label for="valueOne">Value #1</label>
+        <input type="number" name="valueOne"><br/>
+
+        <input type="radio" name="operation" value="add" checked>Add<br/>
+        <input type="radio" name="operation" value="subtract">Subtract<br/>
+        <input type="radio" name="operation" value="multiply">Multiply<br/>
+        <input type="radio" name="operation" value="divide">Divide<br/>
+
+        <label for="valueTwo">Value #2</label>
+        <input type="number" name="valueTwo"><br/>
+
+      <input type="submit" name="answer">
+    </form>
+    <h1>Answer is...</h1>
+    <div id="answer"></div>
+
   </body>
 </html>
